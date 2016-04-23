@@ -10,7 +10,7 @@
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
     <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
-    <link rel='stylesheet prefetch' href='http://ironsummitmedia.github.io/startbootstrap-agency/css/agency.css'>
+    <link rel='stylesheet prefetch' href='http://blackrockdigital.github.io/startbootstrap-agency/css/agency.css'>
     <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Montserrat:400,700'>
     <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Kaushan+Script'>
     <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic'>
@@ -282,7 +282,7 @@
   </script>
 
   <script type="text/javascript">
-    
+
     Parse.initialize("x1ZqMweKkVWNx5YhhzbKqvDbXBartc9M2qzJMCPM", "Xu9xZFPyjwZ1l1F3zmCyhFbafyZnq6BPoIq3Jj2f");
     var TestObject = Parse.Object.extend("TestObject");
     var query = new Parse.Query(TestObject);
@@ -302,7 +302,7 @@
                 TweenMax.to(window, 1, {
                     scrollTo: { y: $('#wall').position().top },
                     ease: Power2.easeOut
-                });                
+                });
             }
             // The object was retrieved successfully.
           },
@@ -341,7 +341,7 @@
     var datas;
 
     // Handle the returned image data
-    function canvasLoadImage(imgData){  
+    function canvasLoadImage(imgData){
         // Create a New Imgae
         var img = new Image();
 
@@ -350,7 +350,7 @@
 
         // Always use onload with images!
         img.onload = function(){
-            
+
             // Load the Canvas & Context
             var canvas = document.getElementById('canvas');
             var context = canvas.getContext('2d');
@@ -375,7 +375,7 @@
             picture: datas
         }
         var sendValues = $.extend( {}, dataValues, {'g-recaptcha-response' : grecaptcha.getResponse()} );
-        
+
         $.ajax({
             url: $(e.currentTarget).attr('action'),
             type: "POST",
@@ -398,14 +398,13 @@
             }else{
                 alert(decodedResp.message);
             }
-    
+
         });
         return false;
     });
-    
+
   </script>
 
 
 </body>
 </html>
-
